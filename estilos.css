@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62,5%;
+}
+
+.fotoIndex {
+    background-image: url(img/imagenindex.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+list-style-type: none;
+text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #0b132b;
+}
+
+nav a img {
+    padding: 10px;
+    height: 60px;
+}
+body div div h1 {
+    color: white;
+    font-size: 3rem;
+    height: 300px;
+    width: 400px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.flexIndex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+}
+body section h1 {
+    font-size: 22px;
+    color: #0b132b;
+    text-align: center;
+    margin: 30px;
+}
+
+.iconoLogo {
+    height: 40px;
+}
+
+.flexImagenesIndex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+.parrafoIndex {
+    display: flex;
+    justify-content: center;
+    color:  #0b132b;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 300px;
+    padding-left: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagenesIndex:hover {
+    filter: opacity(50%);
+}
+
+video {
+width: 800px;
+margin-top: 10px;
+padding-left: 250px;
+margin-bottom: 100px;
+}
+
+
+
+/* ESTILOS QUIENES SOMOS */
+
+.fotoQuienes {
+    background-image: url(img/fotoquienes2.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.gridsQuienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "tituloQuienesSomos tituloQuienesSomos"
+    "parrafoQuienesSomos fotoRapiditas";
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+.tituloQuienesSomos {
+    grid-area: tituloQuienesSomos;
+    color: #0B132B;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.parrafoQuienesSomos {
+    grid-area: parrafoQuienesSomos;
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 25px;
+    width: 500px;
+    color: #0B132B;
+    height: 600px;
+}
+.tituloMaquinas {
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 5px;
+    padding: 15px;
+    padding-top: 25px;
+}
+.listaMaquinas {
+    list-style-type: none;
+    line-height: 40px;
+    text-align: center;
+}
+.fotoRapiditas {
+    grid-area: fotoRapiditas;
+    height: 600px;
+}
+
+
+/* ESTILOS SERVICIOS */
+
+.fotoServicios {
+    background-image: url(img/fotoservicios.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+.tituloServicios {
+    text-transform: uppercase;
+    margin: 100px;
+}
+
+.textosServicios {
+    width: 550px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #0B132B;
+}
+.flexServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px;
+}
+
+.fotoTextil {
+    width: 400px;
+}
+
+
+/* ESTILOS PORTFOLIO */
+
+.fotoPortfolio {
+    background-image: url(img/fotoPortfolio.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.parrafoPortfolio {
+    text-align: center;
+    margin: 30px 250px;
+    margin-bottom: 50px;
+    width: 800px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #0B132B;
+}
+.ulTrabajos {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+.listaTrabajos {
+    padding: 10px;
+    list-style-type:none;
+    display: inline;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0B132B;
+    margin: 10px;
+}
+.tituloPortfolio {
+    margin: 40px;
+    text-align: center;
+    color: #0B132B;
+}
+
+.imagenesTrabajosRecientes {
+    width: 100%;
+    width: 250px;
+}
+.gridsImagenesIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 320px 480px;
+    align-items: start;
+    grid-template-areas: 
+    "foto1 foto2 foto3 foto4"
+    "foto5 foto6 foto7 foto8";
+    justify-items: center;
+    margin-top: 10px;
+}
+.imagenesTrabajosRecientes:hover {
+    filter:opacity(50%);
+}
+.fotoUno {
+    grid-area: foto1;
+}
+.fotoDos {
+    grid-area: foto2;
+}
+.fotoTres {
+    grid-area: foto3;
+}
+.fotoCuatro {
+    grid-area: foto4;
+}
+.fotoCinco {
+    grid-area: foto5;
+}
+.fotoSeis {
+    grid-area: foto6;
+}
+.fotoSiete {
+    grid-area: foto7;
+}
+.fotoOcho {
+    grid-area: foto8;
+}
+/* ESTILOS CONTACTO */
+.navContacto {
+    background-color: #CC5500;
+}
+
+.tituloContacto {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+}
+form {
+    width: 600px;
+    margin: 5px 100px 5px 500px;
+    padding-bottom: 400px;
+}
+.formColor {
+    color: white;
+}
+.espaciosForm {
+    padding: 15px;
+    margin: 5px;
+}
+.botonForm {
+    padding: 5px 7px 5px 7px;
+    margin: 2px 5px 15px 5px;
+    margin-left: 20px;
+}
+
+.textosForm {
+    font-weight: bold;
+    font-size: 16px;
+    color: #0B132B;
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+    background-color: #0B132B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.textoFooter {
+    color: white;
+    padding: 30px;
+    margin: 10px;
+}
+.redesFooter {
+    padding: 30px;
+}
+
+
